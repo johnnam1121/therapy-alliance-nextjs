@@ -8,7 +8,7 @@ export default function HandshakeQuote() {
 
   const imageStyles = {
     height: isMobile ? '100%' : '80%',
-    width: isMobile ? '100%' : '80%',
+    width: isMobile ? '100%' : '70%',
     borderRadius: '20%',
     overflow: 'hidden',
   }
@@ -23,13 +23,13 @@ export default function HandshakeQuote() {
           <Typography variant='h3' sx={{ mt: isMobile ? '0' : '5vh', mb: '3vh', }}>
             We will work for you!
           </Typography>
-          <Typography variant='h5' sx={{ color: '#777777' }}>
+          <Typography variant='h5' sx={{ color: '#777777', fontSize: isMobile ? '' : '1.25rem'  }}>
             We (David and Tony) are graduates from the same institution and created TD Therapy Alliance to transform
             the home health industry. We aim to improve healthcare standards and establish a stronger therapy network.
             Upon entering the home health setting following our education, we initially encountered difficulties due
             to our lack of familiarity and unclear expectations.
           </Typography>
-          <Typography variant='h5' sx={{ color: '#777777', my: '3vh' }}>
+          <Typography variant='h5' sx={{ color: '#777777', my: '3vh', fontSize: isMobile ? '' : '1.25rem'  }}>
             However, through our experience in the field, we have
             identified areas where the standard of care can be improved. Join us in our mission to drive positive change
             and contribute directly to reshaping the future of healthcare. Together, let&apos;s make a significant impact with

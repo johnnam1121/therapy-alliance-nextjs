@@ -60,16 +60,6 @@ export default function Mission() {
 }
 
 
-
-
-
-
-
-
-
-
-
-
 // <Grid container sx={{ backgroundColor: 'primary.light', px: '10vw', my: '10vh' }}>
 // <Typography variant='h2'>Who We Are</Typography>
 // <Grid item xs={12} md={12} >

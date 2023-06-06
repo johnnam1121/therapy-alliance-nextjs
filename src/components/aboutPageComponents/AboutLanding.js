@@ -1,16 +1,13 @@
-import { Box, Grid, Typography, useMediaQuery } from '@mui/material';
-import Image from 'next/image';
+import { Box, Grid, Typography } from '@mui/material';
+import backgroundPhoto from "../../pictures/physicalTherapy.jpeg";
 
 export default function AboutLanding() {
-  const isMobile = useMediaQuery('(max-width:768px)');
-
-  const backgroundPhoto = require('../../pictures/hand.jpeg');
   const background = {
     position: 'relative',
     padding: 0,
     overflow: 'hidden',
     minHeight: '50vh',
-    background: `url(${backgroundPhoto})`,
+    background: `url(${backgroundPhoto.src})`,
     backgroundSize: 'cover',
     backgroundPosition: '50% 40%',
     alignItems: 'center',
@@ -21,13 +18,6 @@ export default function AboutLanding() {
 
   return (
     <Box sx={background}>
-      <Image
-        src={backgroundPhoto.default}
-        alt="Background Photo"
-        layout="fill"
-        objectFit="cover"
-        objectPosition="50% 40%"
-      />
       <Grid container>
         <Grid item xd={12} md={12} sx={{ textAlign: 'center', p: '6vw', alignItems: 'center', zIndex: '3' }} >
           <Typography variant='h1'>About Us</Typography>

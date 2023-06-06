@@ -1,9 +1,10 @@
 import { Box, Button, Grid, Typography, useMediaQuery } from '@mui/material';
+import Image from 'next/image';
+import Link from 'next/link';
 import ReasonOne from '../../pictures/ReasonOne.png';
 import ReasonThree from '../../pictures/ReasonThree.png';
 import ReasonTwo from '../../pictures/ReasonTwo.png';
-import Link from 'next/link';
-import Image from 'next/image';
+import backgroundPhoto from '../../pictures/therapyStock.jpeg';
 
 export default function WhyChooseUs() {
   const isMobile = useMediaQuery('(max-width:768px)');
@@ -28,12 +29,11 @@ export default function WhyChooseUs() {
     mb: '5vh',
   }
 
-  const backgroundPhoto = require('../../pictures/therapyStock.jpeg');
   const background = {
     position: 'relative',
     padding: 0,
     overflow: 'hidden',
-    background: `url(${backgroundPhoto})`,
+    background: `url(${backgroundPhoto.src})`,
     backgroundSize: 'cover',
     backgroundPosition: 'top',
     alignItems: 'center',
@@ -45,13 +45,6 @@ export default function WhyChooseUs() {
   return (
     <Box sx={{ backgroundColor: 'primary.light' }}>
       <Box sx={background}>
-        <Image
-          src={backgroundPhoto.default}
-          alt="Background Photo"
-          layout="fill"
-          objectFit="cover"
-          objectPosition="50% 0%"
-        />
         <Grid container sx={whyChooseUs} spacing={2}>
           <Grid item xs={false} sm={3} />
           <Grid item xs={12} sm={6}>
@@ -59,7 +52,7 @@ export default function WhyChooseUs() {
               Why Choose Us
             </Typography>
             <Typography variant='h5' sx={textStyles}>
-              <span style={{ color: '#3dd3c3' }}>
+              <span style={{ color: '#3dd3c3', fontSize: isMobile ? '' : '1.25rem' }}>
                 Here at TD Therapy Alliance, we take pride in developing our staff in order to
                 provide the best quality services for our patients
               </span>

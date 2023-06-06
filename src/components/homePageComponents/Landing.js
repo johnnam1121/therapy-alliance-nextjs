@@ -1,6 +1,6 @@
 import { Box, Button, Grid, Typography, useMediaQuery } from "@mui/material";
-import Image from "next/image";
 import Link from "next/link";
+import backgroundPhoto from "../../pictures/physicalTherapy.jpeg";
 
 export default function Landing() {
   const isMobile = useMediaQuery("(max-width:768px)");
@@ -18,13 +18,12 @@ export default function Landing() {
     whiteSpace: "nowrap",
   };
 
-  const backgroundPhoto = require("../../pictures/physicalTherapy.jpeg");
   const background = {
     position: "relative",
     padding: 0,
     overflow: "hidden",
     minHeight: "80vh",
-    background: `url(${backgroundPhoto})`,
+    background: `url(${backgroundPhoto.src})`,
     backgroundSize: "cover",
     backgroundPosition: "50% 30%",
     alignItems: "center",
@@ -35,13 +34,6 @@ export default function Landing() {
 
   return (
     <Box sx={background}>
-      <Image
-        src={backgroundPhoto.default}
-        alt="Background Photo"
-        layout="fill"
-        objectFit="cover"
-        objectPosition="50% 30%"
-      />
       <Grid container>
         <Grid item xd={12} md={12} sx={{ textAlign: "center", p: "6vw", alignItems: "center", zIndex: "3", }}>
           <Typography variant="h1">

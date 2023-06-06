@@ -23,6 +23,7 @@ export default function Footer() {
     '&:not(:hover)': {
       transition: '.5s'
     },
+    fontSize: isMobile ? '' : '1.25rem'
   };
 
   const menuTitles = {
@@ -35,6 +36,7 @@ export default function Footer() {
   const menuText = {
     textAlign: 'center',
     color: '#eeeeee',
+    fontSize: isMobile ? '' : '1.25rem'
   };
   const iconStyles = {
     boxShadow: '0 0 2px rgba(0, 0, 0, 0.3)',
@@ -126,7 +128,7 @@ export default function Footer() {
         </Grid>
       </Grid>
       <Box sx={{ backgroundColor: '#008e82', minHeight: '5vh', display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'center', flexWrap: 'wrap' }}>
-        <Typography variant='body1' sx={{ color: '#eeeeee', paddingInline:'2vw' }}>
+        <Typography variant='body1' sx={{ color: '#eeeeee', paddingInline: '2vw' }}>
           ©2023 TD Therapy Alliance. All Rights Reserved.
         </Typography>
       </Box>
