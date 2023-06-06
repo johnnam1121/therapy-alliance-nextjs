@@ -23,7 +23,7 @@ export default function ContactLanding() {
       <Grid container>
         <Grid item xd={12} md={12} sx={{ textAlign: 'center', p: '6vw', alignItems: 'center', zIndex: '3' }} >
           <Typography variant='h1'>Contact Us</Typography>
-          <Typography variant='h5' sx={{ color: '#eeeeee', px: '10vw', mt: '3vh' }}>
+          <Typography variant='h5' sx={{ color: '#eeeeee', px: '10vw', mt: '3vh', fontSize: isMobile ? '' : '1.5rem' }}>
             For any further questions please feel free to reach out to us below.
           </Typography>
         </Grid>

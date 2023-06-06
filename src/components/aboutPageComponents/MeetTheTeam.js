@@ -75,8 +75,8 @@ export default function MeetTheTeam() {
               <Image src={Tony} alt='Tony Pic' style={imgStyles} />
             </Box>
             <Box sx={{ textAlign: 'center', mt: 2 }}>
-              <Typography sx={{ color: '#777777' }} variant='h5'>CEO, Co-Founder</Typography>
-              <Typography sx={{ color: '#00a99d' }} variant='h6'>Tony Tran</Typography>
+              <Typography sx={{ color: '#777777', fontSize: '1.5rem' }} variant='h5'>CEO, Co-Founder</Typography>
+              <Typography sx={{ color: '#00a99d', fontSize: '1.25em' }} variant='h6'>Tony Tran</Typography>
               {/* <Typography sx={{ mb: '3vh' }} variant='body1'>Some text we plan on adding later</Typography> */}
             </Box>
           </Paper>
@@ -87,8 +87,8 @@ export default function MeetTheTeam() {
               <Image src={David} alt='David Pic' style={imgStyles} />
             </Box>
             <Box sx={{ textAlign: 'center', mt: 2 }}>
-              <Typography sx={{ color: '#777777' }} variant='h5'>CEO, Co-Founder</Typography>
-              <Typography sx={{ color: '#00a99d' }} variant='h6'>David Nguyen</Typography>
+              <Typography sx={{ color: '#777777', fontSize: '1.5rem' }} variant='h5'>CEO, Co-Founder</Typography>
+              <Typography sx={{ color: '#00a99d', fontSize: '1.25em' }} variant='h6'>David Nguyen</Typography>
               {/* <Typography sx={{ mb: '3vh' }} variant='body1'>Some text we plan on adding later</Typography> */}
             </Box>
           </Paper>

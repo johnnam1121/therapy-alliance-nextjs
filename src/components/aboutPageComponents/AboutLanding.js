@@ -1,7 +1,8 @@
-import { Box, Grid, Typography } from '@mui/material';
+import { Box, Grid, Typography, useMediaQuery } from '@mui/material';
 import backgroundPhoto from "../../pictures/physicalTherapy.jpeg";
 
 export default function AboutLanding() {
+  const isMobile = useMediaQuery("(max-width:768px)");
   const background = {
     position: 'relative',
     padding: 0,
@@ -21,7 +22,7 @@ export default function AboutLanding() {
       <Grid container>
         <Grid item xd={12} md={12} sx={{ textAlign: 'center', p: '6vw', alignItems: 'center', zIndex: '3' }} >
           <Typography variant='h1'>About Us</Typography>
-          <Typography variant='h5' sx={{ color: '#eeeeee', px: '10vw', mt: '3vh' }}>
+          <Typography variant='h5' sx={{ color: '#eeeeee', px: '10vw', mt: '3vh', fontSize: isMobile? "":"2rem" }}>
             We seek to improve the home health industry by raising the bar for quality care.
             With years of experience in the field, we have identified areas where the industry
             could benefit from better training and higher standards. At TD Therapy Alliance,

@@ -112,14 +112,14 @@ export default function ContactForm() {
           <Typography variant="h4" sx={{ mb: '3vh', mt: isMobile ? '3vh' : '0' }}>
             Job Seekers
           </Typography>
-          <Typography variant="h5" sx={{ color: '#555555', mb: '5vh' }}>
+          <Typography variant="h5" sx={{ color: '#555555', mb: '5vh', fontSize: isMobile ? '' : '1.25rem' }}>
             Call (713) 838-2256 to have a direct conversation with a recruiter
             regarding career opportunities or complete our Contact Form.
           </Typography>
           <Typography variant="h4" sx={{ mb: '3vh' }}>
             Request Staffing
           </Typography>
-          <Typography variant="h5" sx={{ color: '#555555', mb: '5vh' }}>
+          <Typography variant="h5" sx={{ color: '#555555', mb: '5vh', fontSize: isMobile ? '' : '1.25rem' }}>
             Please Call (713) 838-2256 in order to find out how TD Therapy Alliance
             can meet your staffing needs or complete our Contact Form.
           </Typography>

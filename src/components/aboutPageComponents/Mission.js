@@ -5,12 +5,14 @@ export default function Mission() {
 
   const textStyles = {
     color: "#888888",
-    mb: '3vh'
+    mb: '3vh',
+    fontSize: isMobile ? "" : "1.75rem"
   }
 
   const sectionTitles = {
     color: '#777777',
-    mb: '1vh'
+    mb: '1vh',
+    fontSize: isMobile ? "" : "2.5rem"
   }
 
   return (
