@@ -39,7 +39,7 @@ export default function Mission() {
           </Typography>
           <Typography variant='h5' sx={textStyles}>
             Our vision is to transform the industry by providing our team with comprehensive training,
-            promoting consistency and excellence in therapy services. By investing in our therapists'
+            promoting consistency and excellence in therapy services. By investing in our therapists&apos;
             professional development, we aim to cultivate leading health care providers of the future.
           </Typography>
         </Grid>

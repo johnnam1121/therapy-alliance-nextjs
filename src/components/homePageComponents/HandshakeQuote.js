@@ -32,11 +32,11 @@ export default function HandshakeQuote() {
           <Typography variant='h5' sx={{ color: '#777777', my: '3vh' }}>
             However, through our experience in the field, we have
             identified areas where the standard of care can be improved. Join us in our mission to drive positive change
-            and contribute directly to reshaping the future of healthcare. Together, let's make a significant impact with
+            and contribute directly to reshaping the future of healthcare. Together, let&apos;s make a significant impact with
             TD Therapy Alliance.
           </Typography>
           <Typography sx={{ fontFamily: "Lucida Calligraphy", mt: '7vh', fontSize: '1.5rem' }}>
-            "Beyond Recovery, Towards Optimal Health: Our Vision For Therapy"
+            &quot;Beyond Recovery, Towards Optimal Health: Our Vision For Therapy&quot;
           </Typography>
         </Grid>
       </Grid>

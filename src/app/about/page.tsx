@@ -74,7 +74,7 @@ const theme = createTheme({
   },
 });
 
-export default function page() {
+export default function Page() {
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])

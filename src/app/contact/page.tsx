@@ -56,7 +56,7 @@ const theme = createTheme({
   },
 });
 
-export default function ContactPage() {
+export default function Page() {
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
